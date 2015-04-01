@@ -9,22 +9,10 @@ This module handles all about sensor with powerful and familiar techs. In other 
 
 ## Sensor.js and its app
 
-<br>
-<p style="text-align:right">
-<small>Created by <a href="http://www.daliworks.net">Daliworks R&D Team</a> / <a mailto="contact@daliworks.net">contact@daliworks.net</a></small>
-</p>
-
----
-
-## Sensor.js
-
----
-
 #### Open source + Open boards and sensors 
 
 ![sensor.js on BBB](https://camo.githubusercontent.com/d945073ddb213e869d76c910ffc188c5766c463e/68747470733a2f2f7261772e6769746875622e636f6d2f64616c69776f726b732f73656e736f726a732f6d61737465722f646f632f696d6167652f676174657761792e706e67)
 
----
 
 #### Talking to sensors and actuators with ease
 
@@ -35,14 +23,12 @@ This module handles all about sensor with powerful and familiar techs. In other 
 - Works on linux boards such as BeagleBone Black or Raspberry Pi.
 - Supported sensor list is [here](https://github.com/daliworks/sensorjs/blob/master/lib/sensor/README.md) 
 
----
 
 ### Open source software
 
   - npm available at [npmjs.com](https://www.npmjs.com/package/sensorjs)
   - Open source code is available at [github](https://github.com/daliworks/sensorjs)
 
----
 
 ### Installation
           
@@ -58,7 +44,6 @@ install as a node module
 > git clone https://github.com/daliworks/sensorjs.git
 ```
 
----
 
 ### url scheme
 
@@ -72,7 +57,6 @@ Examples:
 `sensorjs:///ble/000A3A58F310/proximity/0A3A58F310-1`
 </small>
 
----
 
 ### Sensor.js app
 
@@ -130,7 +114,6 @@ app.listen(sensorApp.createSensor(dhtUrl));
 
 More examples are [here](https://github.com/daliworks/sensorjs/tree/master/example).
 
----
 
 ### Writing your own driver
 
@@ -152,7 +135,6 @@ Examples: [sensorjs-ble](https://github.com/daliworks/sensorjs-ble), [sensorjs-f
     +-- package.json
 ```
 
----
 
 ### How to implement driver part
 
@@ -203,7 +185,6 @@ FutureSensor.prototype._enableChange = function () {
 };
 ```
 
----
 
 ### How to use custom driver
 
@@ -244,11 +225,9 @@ sensorDriver.discover('customSensor', function (err, devices) {
 });
 ```
 
----
 
 ## Sensorjs app
 
----
 
 ### Sensorjs app
 
@@ -260,7 +239,6 @@ sensorDriver.discover('customSensor', function (err, devices) {
 
 ` + angular.js` <span class="fragment"><em> : Web app framework</em></span>
 
----
 
 ### Installation
 
@@ -292,7 +270,6 @@ Run it and access http://{your_device}:{port}
 
 More details are [here](https://github.com/daliworks/sensorjs-app/blob/master/src/README.md)
 
----
 
 ### REST API
 
@@ -320,7 +297,6 @@ app.post('/api/discoverSensors', routes.discoverSensors());
 app.post('/api/setActuator', routes.setActuator());
 ```
 
----
 
 ### Device app example
 
@@ -344,7 +320,6 @@ app = connect().
   use(connect.websocketServer(appServer, options && options.websocketTopic));
 ```
 
----
 
 ### Client app example
 
@@ -397,9 +372,8 @@ Angular View - home.html
   </form>
 ```
 
----
 
-# Thank you
-
-
-
+<br>
+<p style="text-align:right">
+<small>Created by <a href="http://www.daliworks.net">Daliworks R&D Team</a> / <a mailto="contact@daliworks.net">contact@daliworks.net</a></small>
+</p>
