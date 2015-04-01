@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+http://www.daliworks.net
 
-### More Information
+### Thing+
 
-A place to include any other types of information that you'd like to include about yourself.
+https://www.thingplus.net
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[contact@daliworks.net](mailto:contact@daliworks.net)
