@@ -1,5 +1,1 @@
-
-type: CNAME
-host: techblog.daliworks.net
-answer: daliworks.github.io
-TTL: 60
+techblog.daliworks.net
