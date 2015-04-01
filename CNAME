@@ -2,4 +2,4 @@
 type: CNAME
 host: techblog.daliworks.net
 answer: daliworks.github.io
-TTL: 300
+TTL: 60
