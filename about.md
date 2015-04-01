@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-http://www.daliworks.net
+[http://www.daliworks.net](http://www.daliworks.net)
 
 ### Thing+
 
-https://www.thingplus.net
+[https://www.thingplus.net](https://www.thingplus.net)
 
-### Contact me
+### Contact us
 
 [contact@daliworks.net](mailto:contact@daliworks.net)
