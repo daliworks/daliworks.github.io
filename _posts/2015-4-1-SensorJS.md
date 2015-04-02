@@ -96,7 +96,7 @@ sensorApp.discover('ds18b20'/*sensor driver*/, function (err, devices) {
     device.sensorUrls.forEach(function(sensorUrl) {
       app.listen(sensorApp.createSensor(sensorUrl));
     });
-  });
+ });
 });
 
 // gpio is not discoverable
@@ -364,8 +364,6 @@ Angular View - home.html
   </form>
 ```
 
+---
 
-<br>
-<p style="text-align:right">
-<small>Created by <a href="http://www.daliworks.net">Daliworks R&D Team</a> / <a mailto="contact@daliworks.net">contact@daliworks.net</a></small>
-</p>
+Thank you!
