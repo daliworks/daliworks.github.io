@@ -28,3 +28,8 @@ Sensor.js의 사용 설명 슬라이드입니다. 센서 애플리케이션을 �
 ![Sensor.js App and Driver](/assets/sensorjs_cloudtag.png)
 [Sensor.js App and Driver 소개 슬라이드](/assets/sensorjs_slides/index.html)
 
+
+각주
+-----
+[^1]: I2C는 두 가닥의 선(하나는 데이터, 하나는 동기화를 위한 clock)으로 데이터를 주고받는 유선 센서 네트워크입니다. 두 가닥의 선만 필요하고, 여러 개의(112개까지 가능) 센서를 연결할 수 있어서, 게이트웨이 장비에 직접 센서를 연결할 때 많이 사용됩니다.  http://en.wikipedia.org/wiki/I%C2%B2C 
+
