@@ -1,7 +1,8 @@
 ---
 layout: post
-title: SensorJS - 웹개발자가 사물과 대화하는 방식
+title: "SensorJS - 웹개발자가 사물과 대화하는 방식"
 tags: sensorjs IoT
+published: true
 ---
 
 여기는 사물 인터넷(Internet of Things)기술을 이야기하는 블로그입니다. 사물의 연결에 대한 이야기로 시작해 보겠습니다.
@@ -14,12 +15,12 @@ tags: sensorjs IoT
 
 > 센서 드라이버를 웹 개발자도 작성할 수 없을까?
 
-웹개발자가 가장 어려운 하는 부분이 각 센서별로 너무 다른 방식으로 초기화하고, 값을 읽어 내고 해석해내는 드라이버를 제작하는 부분입니다. 이 부분도 Sensor.js를 이용해 자바스크립트로  개발할 수 있도록 할 수있습니다. 예를 들어, [HTU21D](http://www.meas-spec.com/product/humidity/HTU21D.aspx)는 유선 센서 네트워크인 I²C[^1]에 연결하여 사용할 수 있는 습도센서입니다. 이 센서만의 특별한 방식으로 초기화하고, 값을 읽어내고, 이것을 Sensor.js가 원하는 형태로 전달하는 과정을 직접 구현한 드라이버 예를 참고하세요 - [HTU21D 드라이버](https://github.com/daliworks/sensorjs/blob/master/lib/sensor/driver/digitalHumidity/HTU21D.js)
+웹개발자가 가장 어려워 하는 부분이 각 센서별로 너무 다른 방식으로 초기화하고, 값을 읽어 내고 해석해내는 드라이버를 제작하는 부분입니다. 이 부분도 Sensor.js를 이용해 자바스크립트로  개발할 수 있도록 할 수있습니다. 예를 들어, [HTU21D](http://www.meas-spec.com/product/humidity/HTU21D.aspx)는 유선 센서 네트워크인 I²C[^1]에 연결하여 사용할 수 있는 습도센서입니다. 이 센서만의 특별한 방식으로 초기화하고, 값을 읽어내고, 이것을 Sensor.js가 원하는 형태로 전달하는 과정을 직접 구현한 드라이버 예를 참고하세요 - [HTU21D 드라이버](https://github.com/daliworks/sensorjs/blob/master/lib/sensor/driver/digitalHumidity/HTU21D.js)
 
 ![BBB와 HTU21D](/assets/bbb+sensors.jpg)
 _BeagleBone Black에 HTU21D등의 여러 센서 연결_
 
- ✓ Sensorjs내에 이미 활용할 수 있는 많은 센서드라이 들이 포함되어 있습니다. - [기본 센서드라이버들](https://github.com/daliworks/sensorjs/blob/master/lib/sensor/README.md)
+ ✓ Sensorjs내에 이미 활용할 수 있는 많은 센서드라이버들이 포함되어 있습니다. - [기본 센서드라이버들](https://github.com/daliworks/sensorjs/blob/master/lib/sensor/README.md)
 
  ✓ 또한, 독자적으로 만들어진 드라이버들을 사용할 수 있습니다. 예를 들어, 카메라 연결하려면, [sensorjs-foscam](https://github.com/daliworks/sensorjs-foscam)를, [TI SensorTag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml)를 사용하려면 [sensorjs-ble](https://github.com/daliworks/sensorjs-ble)를 활용해 보세요. 
 
@@ -31,5 +32,4 @@ Sensor.js의 사용 설명 슬라이드입니다. 센서 애플리케이션을 �
 
 각주
 -----
-[^1]: I2C는 두 가닥의 선(하나는 데이터, 하나는 동기화를 위한 clock)으로 데이터를 주고받는 유선 센서 네트워크입니다. 두 가닥의 선만 필요하고, 여러 개의(112개까지 가능) 센서를 연결할 수 있어서, 게이트웨이 장비에 직접 센서를 연결할 때 많이 사용됩니다.  http://en.wikipedia.org/wiki/I%C2%B2C 
-
+[^1]: I2C는 두 가닥의 선(하나는 데이터, 하나는 동기화를 위한 clock)으로 데이터를 주고받는 유선 센서 네트워크입니다. 두 가닥의 선만 필요하고, 여러 개의(112개까지 가능) 센서를 연결할 수 있어서, 게이트웨이 장비에 직접 센서를 연결할 때 많이 사용됩니다.  http://en.wikipedia.org/wiki/I%C2%B2C
