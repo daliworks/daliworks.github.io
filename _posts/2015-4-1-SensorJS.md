@@ -20,7 +20,7 @@ published: true
 ![BBB와 HTU21D](/assets/bbb+sensors.jpg)
 _BeagleBone Black에 HTU21D등의 여러 센서 연결_
 
- ✓ Sensorjs내에 이미 활용할 수 있는 많은 센서드라이버들이 포함되어 있습니다. - [기본 센서드라이버들](https://github.com/daliworks/sensorjs/blob/master/lib/sensor/README.md)
+ ✓ Sensorjs내에 이미 활용할 수 있는 많은 [센서드라이버들](https://github.com/daliworks/sensorjs/blob/master/lib/sensor/README.md)이 포함되어 있습니다.
 
  ✓ 또한, 독자적으로 만들어진 드라이버들을 사용할 수 있습니다. 예를 들어, 카메라 연결하려면, [sensorjs-foscam](https://github.com/daliworks/sensorjs-foscam)를, [TI SensorTag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml)를 사용하려면 [sensorjs-ble](https://github.com/daliworks/sensorjs-ble)를 활용해 보세요. 
 
