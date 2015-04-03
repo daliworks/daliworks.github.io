@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SensorJS - 웹개발자가 사물과 대화하는 방식
+tags: sensorjs IoT
 ---
 
 여기는 사물 인터넷(Internet of Things)기술을 이야기하는 블로그입니다. 사물의 연결에 대한 이야기로 시작해 보겠습니다.
@@ -20,11 +21,10 @@ _BeagleBone Black에 HTU21D등의 여러 센서 연결_
 
  ✓ Sensorjs내에 이미 활용할 수 있는 많은 센서드라이 들이 포함되어 있습니다. - [기본 센서드라이버들](https://github.com/daliworks/sensorjs/blob/master/lib/sensor/README.md)
 
- ✓ 또한, 독자적으로 만들어진 드라이버들을 사용할 수 있습니다. 예를 들어, 카메라 연결하려면, [sensorjs-foscam](https://github.com/daliworks/sensorjs-foscam)를, TI SensorTag를 사용하려면 [sensorjs-ble](https://github.com/daliworks/sensorjs-ble)를 활용해 보세요. 
+ ✓ 또한, 독자적으로 만들어진 드라이버들을 사용할 수 있습니다. 예를 들어, 카메라 연결하려면, [sensorjs-foscam](https://github.com/daliworks/sensorjs-foscam)를, [TI SensorTag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml)를 사용하려면 [sensorjs-ble](https://github.com/daliworks/sensorjs-ble)를 활용해 보세요. 
 
 Sensor.js의 사용 설명 슬라이드입니다. 센서 애플리케이션을 어떻게 작성하였는지, 센서 드라이버를 직접 제작하는 방법을 구체적으로 설명하고 있습니다.
-[Sensor.js App and Driver](/assets/sensorjs_slides/index.html)
 
+![Sensor.js App and Driver](/assets/sensorjs_cloudtag.png)
+[Sensor.js App and Driver 소개 슬라이드](/assets/sensorjs_slides/index.html)
 
----
-[^1]: I2C는 두 가닥의 선(하나는 데이터, 하나는 동기화를 위한 clock)으로 데이터를 주고받는 유선 센서 네트워크입니다. 두 가닥의 선만 필요하고, 여러 개의(112개까지 가능) 센서를 연결할 수 있어서, 게이트웨이 장비에 직접 센서를 연결할 때 많이 사용됩니다.  http://en.wikipedia.org/wiki/I%C2%B2C 
