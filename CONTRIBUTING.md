@@ -1,5 +1,10 @@
 ## 블로그글쓰기 가이드
-TODO: DH/BJ
+TODO: DH
+
+### 웹에서 작성하기
+1. http://prose.io/#daliworks/daliworks.github.io
+  - prose.io 에 github authorization 필요.
+2. Just Play!
 
 ### 문어체? 구어체? 등
 
