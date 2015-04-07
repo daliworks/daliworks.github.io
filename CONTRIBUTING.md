@@ -15,6 +15,7 @@
 제일 먼저 올라간 sensorjs 글을 참고하세요. ```_posts/2015-4-1-SensorJS.md```에 있습니다.
 
 ### README에 있는 내용...
+
 Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
 
 > You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
@@ -22,7 +23,14 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 ## 설정 
 
 ### footnote 쓰기위한 설정.
- - ```markdown: kramdown```을 _config.yml에 설정함. 
+ - _config.yml 에 다음과 같이 설정.
+
+```
+markdown: redcarpet
+redcarpet:
+  extensions: [footnotes]
+```
+
  - see [참고글](http://stackoverflow.com/questions/19483975/jekyll-on-github-pages-any-way-to-add-footnotes-in-markdown)
 
 ## 글쓰기 환경
@@ -45,4 +53,5 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
  - 완료되면, git commit and push!
 
-
+ - draft 작성,
+ _draft/에서 파일 만들고 ```jekyll serve --watch --draft``` 로 볼 수 있음.
