@@ -24,11 +24,17 @@ Thing+ 서비스는 최소 수십 개 서버(이글에서는 물리적 서버가
 이러한 많은 서버를 관리하고 역할을 지정하기 위해 Thing+는 Apache Zookeeper[^zk] 를 이용합니다. 다른 대안들도 있지만, 여전히 Zookeeper는 이러한 분산 환경의 조정자 역할을 하는 가장 인기 좋은 도구입니다.
 
 Zookeeper는 다음의 특성을 가지고 있습니다.
+
 - znode를 단위로 관리된다.
+
 - znode는 파일 시스템과 유사한 디렉토리 구조(path)를 가진다.
+
 - znode는 부모(parent) 노드를 가져야 하며, 루트(root) 노드의 path는 '/'이다.
+
 - znode에 데이터를 저장할 수 있다.
+
 - znode의 path의 변화 또는 저장된 데이터의 변화를 통보받을 수 있다.
+
 - znode는 Zookeeper와 클라이언트의 연결이 끊어지면 자동으로 삭제되도록 설정(Ephemeral 노드) 할 수 있다.
 
 Thing+ 개발팀은 이러한 Zookeeper의 특성을 사용하여 분산환경에서 Zookeeper를 보다 쉽게 사용할 수 있도록 [zkHelper](https://github.com/daliworks/zkHelper)를 공개하였습니다.
