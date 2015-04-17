@@ -23,7 +23,7 @@ Thing+ 서비스는 최소 수십 개 서버(본 글에서는 물리적 서버�
 
 이러한 많은 서버를 관리하고 역할을 지정하기 위해 Thing+는 Apache Zookeeper[^zk] 를 이용합니다. 다른 대안들도 있지만, 여전히 Zookeeper는 이러한 분산 환경의 조정자 역할을 하는 가장 인기 좋은 도구입니다.
 
-Zookeeper는 다음의 특성을 가지고 있습니다.
+[ZooKeeper](https://cwiki.apache.org/confluence/display/ZOOKEEPER/ProjectDescription)는 다음의 특성을 가지고 있습니다.
 
 - znode를 단위로 관리된다.
 
@@ -161,10 +161,6 @@ zk.init(options, function (err, zkClient) {
   });
 });
 ```
-
-#### 참고
-
-[ZooKeeper Overview](https://cwiki.apache.org/confluence/display/ZOOKEEPER/ProjectDescription)
 
 #### 각주
 
