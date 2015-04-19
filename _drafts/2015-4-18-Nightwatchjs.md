@@ -27,7 +27,7 @@ Selenuim은 웹 테스트를 위한 여러 프로젝트를 오픈 소스로 진�
 ### 1) Node.js와 나이트와치 설치
 
 나이트와치는 node.js 기반이기 때문에 먼저 node.js설치가 필요합니다.
-설치 방법은 [node.js](https://nodejs.org) 공식 사이트의 설치 가이드를 참고하시면 됩니다. 
+설치 방법은 [node.js](https://nodejs.org) 공식 사이트의 설치 가이드를 참고하면 됩니다. 
 
 node.js 설치 후에 나이와치를 npm install을 이용해서 설치합니다. 전체 시스템에서 나이트와치를 사용하기 위해서는 `-g` 옵션을 이용합니다.
 
@@ -121,17 +121,17 @@ Selenium이 정상적으로 실행되었다는 메시지가 나오면서 대기 
 
 #### nightwatch.json
 
-- `src_folders`:  테스트 파일들의 경로. {string | string array}
-- `output_folder`: 실행 후 생성되는 XML형태의 리포트가 저장되는 경로(option) { file path }
-- `custom_commands_path`: 사용자가 정의 Command가 있는 경로(option) { file path }
+- `src_folders`:  테스트 파일들의 경로 { string | string array }
+- `output_folder`: 실행 후 생성되는 XML형태의 리포트가 저장되는 경로 { file path }
+- `custom_commands_path`: 사용자가 정의 Command가 있는 경로 { file path }
 - `selenium`: *Selenium 서버 실행 설정*
-    + `start_process`: Selenium 서버 자동 실행 여부 {true | false}
-    + `server_path`: Selenium Jar파일이 있는 경로 {file path }
+    + `start_process`: Selenium 서버 자동 실행 여부 { true | false }
+    + `server_path`: Selenium Jar파일이 있는 경로 { file path }
     
 - `test_settings`: *테스트 환경 설정*
     + `default`: 테스트 환경 이름(nightwatch 실행시에 옵션으로 사용)
         * `launch_url`: 테스트할 페이지의 URL(테스트 파일에서도 설정 가능)
-        * `desiredCapabilities`: Selenium Webdriver에 전달하는 옵션을 지정. [전체 옵션 리스트](https://code.google.com/p/selenium/wiki/DesiredCapabilities)
+        * `desiredCapabilities`: Selenium Webdriver에 **실행할 브라우저**와 옵션을 지정 ([전체 옵션 리스트](https://code.google.com/p/selenium/wiki/DesiredCapabilities))
 
          ```json
          "desiredCapabilities" : {
@@ -146,11 +146,11 @@ nightwatch.json 파일의 작성이 완료되면 아래와 같이 나이트와�
 $ nightwatch --config ./nightwatch.json --env integration
 ```
 
-`--config` 옵션으로 `nightwatch.json`의 경로를 설정하고 `--env` 옵션에는 위에서 설정한 `test_settings`에 테스트할 설정의 이름을 입력하면 됩니다. `--help` 로 옵션에 대한 상세 정보를 확인 할 수 있습니다.
+`--config` 옵션은 `nightwatch.json`의 경로를 지정하고 `--env` 옵션은 위에서 설정한 `test_settings`의 리스트 중에서 하나를 입력합니다. `--env` 옵션이 지정되지 않으면 default가 실행됩니다. `--help` 로 옵션에 대한 상세 정보를 확인 할 수 있습니다.
 
 ## 테스트 케이스 작성
 
-`nightwatch.json`의 `src_folders` 설정 경로에 아래의 샘플을 파일로 저장하고 나이트와치를 실행하면 Selenium 서버가 브라우저를 실행하여서 테스트 케이스를 자동으로 진행하는 것을 볼 수 있습니다.
+`nightwatch.json`의 `src_folders` 설정 경로에 아래의 샘플을 파일로 저장하고 나이트와치를 실행하면 Selenium 서버가 브라우저를 실행하여 테스트 케이스를 자동으로 진행하는 것을 볼 수 있습니다.
 
 ```javascript
 module.exports = {
@@ -189,9 +189,10 @@ this.demoTestGoogle = function (browser) {
 ```
 
 
-## 결론
+## 글을 마치며
 
-나이트와치 환경 설정과 간단한 테스트 파일 작성까지 해 보았습니다. 나이트와치에는 여기에 소개하지 못한 웹 환경에 따른 사용자 정의 명령어, 동시에 여러개의 브라우저를 병렬적으로 실행하는 옵션등 다양한 기능을 제공합니다. 좀 더 상세한 내용은 나이트와치 [홈페이지](http://nightwatchjs.org)에 문서화가 잘 되어 있습니다.
+나이트와치 환경 설정과 간단한 테스트 파일 작성까지 해 보았습니다. 나이트와치에는 여기에 소개하지 못한 웹 환경에 따른 사용자 정의 명령어, 동시에 여러개의 브라우저를 병렬적으로 실행하는 옵션 등 다양한 기능을 제공합니다. 
+최근에도 나이트와치는 지속적인 개발이 진행되면서 안정성과 다양한 기능이 추가되고 있습니다. 좀 더 상세한 내용은 나이트와치 [홈페이지](http://nightwatchjs.org)에 문서화가 잘 되어 있습니다.
 
 
 #### 참고
