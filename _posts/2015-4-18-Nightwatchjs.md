@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nightwatch.js - 테스트 자동화"
+title: "Nightwatch.js - Part1 : 테스트 자동화"
 tags: nightwatch test
 published: true
 ---
@@ -193,6 +193,8 @@ this.demoTestGoogle = function (browser) {
 
 나이트와치 환경 설정과 간단한 테스트 파일 작성까지 해 보았습니다. 나이트와치에는 여기에 소개하지 못한 웹 환경에 따른 사용자 정의 명령어, 동시에 여러개의 브라우저를 병렬적으로 실행하는 옵션 등 다양한 기능을 제공합니다. 
 최근에도 나이트와치는 지속적인 개발이 진행되면서 안정성과 다양한 기능이 추가되고 있습니다. 좀 더 상세한 내용은 나이트와치 [홈페이지](http://nightwatchjs.org)에 문서화가 잘 되어 있습니다.
+
+Part2에서는 테스트 케이스 작성에 필요한 주요 API들과 실제 나이트와치 적용을 위한 테스트 환경 구축에 대해서 좀 더 상세히 얘기해 보겠습니다.
 
 
 #### 참고
