@@ -1,3 +1,32 @@
-## A New Post
+---
+published: false
+---
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+category
+
+* 시작하기
+  - 씽플러스란?
+  - 어떻게 유용한가요?
+  - 씽플러스 시작하기
+  	1. 하드웨어구매
+    2. 회원가입
+    3. 규칙을 만들고 제어하기
+    4. 게이트웨이/센서를 분석/통계를 통해 모니터링하기
+    5. 어디서든 편리하게 보기   
+
+* 용어집
+  - 게이트웨이란?
+  - 디바이스란?
+  - 센서란?
+  - 대시보드란?
+  - 타임라인이란?
+  - 어드민/유저란?
+  
+* 가입하기
+  - 웹에서 회원가입하기
+  - 계정을 만든 후에
+
+* 사용하기
+  - 
+
+* 규칙 만들기
