@@ -3,7 +3,7 @@
 1. 내 앞에 앉아있는 후배 또는 학생들에게 설명해 주는 느낌으로 해봅시다. 반말이 아니라 일반적 존칭. 그러면서도 친근하게.
 2. 문어체라기 보다는 존칭형의 구어체. 문어체 - 논문 스타일. 구어체 - 선생님의 강의.
 3. 문어체 - "본 글은 ~ 입니다",  구어체 - "이번 글은 저희 달리웍스의 개발 문화에 대한 소개입니다"
-4. ~합니다. ~하시죠.  ~일까요?  등 
+4. ~합니다. ~하시죠.  ~일까요?  등
 
 
 ### 웹에서 작성하기
@@ -20,7 +20,7 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 > You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
-## 설정 
+## 설정
 
 ### footnote 쓰기위한 설정.
  - _config.yml 에 다음과 같이 설정.
@@ -42,7 +42,7 @@ redcarpet:
   $ sudo gem install jekyll-sitemap
  ```
 
- - repo 꺼내고, 
+ - repo 꺼내고,
  ```
  $ git clone https://github.com/daliworks/daliworks.github.io
  $ cd daliworks.github.io
