@@ -18,7 +18,7 @@ published: true
 # 모니터링
 
 ### 대시보드 화면안내
-![](http://techblog.daliworks.net/assets/dashboard1.jpg)
+![](http://techblog.daliworks.net/assets/dashboard1.png)
 ### 대시보드 꾸미기
 * 서비스 사용준비(준비사항 가이드1, 2)를 마치고 로그인을 하면 대시보드 화면이 나옵니다.
 * 화면에서 다양한 위젯을 추가하여 실시간으로 데이터를 확인할 수 있습니다.
