@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Help"
+title: "모니터링"
 tags: help
 published: true
 ---
 
-# 모니터링
 Thing+ 를 통해서, IoT의 기본적인 내용인 사물을 연결하고 실시간으로 센서의 데이타를 실시간으로 확인할 수 있습니다.
 주요 기능들에 대해서 다음과 같이 설명드립니다.
 

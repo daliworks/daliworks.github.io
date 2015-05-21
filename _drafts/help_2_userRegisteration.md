@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Help"
+title: "하드웨어 설치와 회원가입 및 연동"
 tags: help
 published: true
 ---

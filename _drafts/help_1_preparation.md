@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Help"
+title: "기본 가이드"
 tags: help
 published: true
 ---

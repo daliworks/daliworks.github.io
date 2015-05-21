@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Help"
+title: "관리 기능"
 tags: help
 published: true
 ---
 
 
-# 기능* 관리
+# 관리 기능
 1. 서비스 관리
 * 사이트 관리
 * 사용자 관리

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Help"
+title: "FAQ"
 tags: help
 published: true
 ---
