@@ -36,7 +36,7 @@ this.demoTest = function (browser) {
 #### 3) Selenium Protocol
 Selenium Protocol은 [Selenium JsonWireProtocol](http://code.google.com/p/selenium/wiki/JsonWireProtocol)에 대해 맵핑된 API들을 제공합니다.
 
-실 사용에서는 대부분 Commands API를 사용하면 문제가 없지만 Frame 기타 몇 가지에 대해서는 제공하지 않기 때문에 테스트를 위해서는 사용을 필요할 수 있습니다.
+실 사용에서는 대부분 Commands API를 사용하면 문제가 없지만, Frame이나 기타 몇 가지에 대해서는 제공하지 않기 때문에 테스트를 위해서는 필요할 수 있습니다.
 
 
 아래에 샘플은 실제 테스트에서 Commands API로 구현이 불가능하여 작성한 Selenium Protocol 예제 입니다.
@@ -188,7 +188,7 @@ module.exports = {
 $ nightwatch --tag login
 
 # specify multipl tags
-$ nightwatch --tag login --tag something_els
+$ nightwatch --tag login --tag something_else
 ```
 
 
