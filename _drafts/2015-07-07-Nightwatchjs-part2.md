@@ -9,17 +9,17 @@ published: true
 
 
 ## 나이트와치 API
-나이트와치의 실행을 위한 API는 Assert, Commands, Selenium Portocol, Expect(version 0,7 에서 추가됨)로 분류 되어 있습니다.
+나이트와치의 실행을 위한 API는 Assert, Commands, Selenium Portocol, Expect(version 0.7 에서 추가됨)로 분류 되어 있습니다.
 
 
 #### 1) Assert
-Assert는 일반적으로 프로그램에서 사용하는 assertion의 기능입니다. `.assert`와 `.verify` 두 가지 함수로 분리되는데 assertion의 결과에 따라서 프로그램을 중지하거나 로그만 남기고 계속 진행 하거나 필요에 따라서 구분해서 사용하면 됩니다.
+Assert는 일반적으로 프로그램에서 사용하는 assertion 기능입니다. `.assert`와 `.verify` 두 가지 함수로 분리되는데 결과에 따라서 프로그램을 중지하거나 로그만 남기고 계속 진행 하는 두 가지를 필요에 따라서 구분해서 사용하면 됩니다.
 
 주로 attribute, text, css class, element에 화면 표시 검증 등에 대해서 사용합니다.
 
 
 #### 2) Commands
-브라우저 테스트를 위한 다양한 동작들을 제공하는 Selenium protocol의 API들을 하나 또는 그 이상을 묶어서 사용하기 편하게 제공하는 API들입니다. 웹 페이지 내의 element에 대해서 입력, 값 읽기, 클릭 등의 명령을 사용하고 callback 함수를 제공하여서 동작후에 Assert API로 결과에 대해서 검증할 수 있습니다.
+테스트를 위한 다양한 동작들을 제공하는 Selenium protocol의 API들을 하나 또는 그 이상을 묶어서 사용하기 편하게 제공하는 API들입니다. 웹 페이지 내의 element에 대해서 입력, 값 읽기, 클릭 등의 명령을 사용하고 callback 함수를 제공하여서 동작후에 Assert API로 결과에 대해서 검증할 수 있습니다.
 
 ```javascript
 this.demoTest = function (browser) {
@@ -72,9 +72,9 @@ this.demoTest = function (browser) {
 
 
 ## Custom Commands
-위에 API 기반으로 테스트 케이스를 작성하다 보면 웹에서 반복적으로 같은 동작의 API들을 호출해야 할 때가 많은데 이럴때 유용하게 이용할 수 있는것이 Custom Commands 입니다.
+위에 API 기반으로 테스트 케이스를 작성하다 보면 반복적으로 같은 동작의 API들을 호출해야 할 때가 많은데 이럴때 유용하게 이용할 수 있는것이 Custom Commands 입니다.
 
-아래는 nightwatchjs 페이지의 Custom Commands 샘플코드로 입력 받은 파일에 대해서 resize를 처리해 주는 기능을 합니다.
+아래는 nightwatchjs 페이지에서 가져온 Custom Commands 샘플코드로 입력 받은 이미지 파일을 resize 합니다.
 
 ```javascript
 exports.command = function(file, callback) {
@@ -130,7 +130,7 @@ module.exports = {
 
 
 ## 테스트 실행 옵션
-전체 테스트 케이스의 구조와 실행 시에 지난 번에 다루지 못했던 실행 옵션에 대해서 몇 가지에 대해서 알아 보겠습니다.
+전체 테스트 케이스의 구조와 실행 시에 지난 번에 다루지 못했던 옵션에 대해서 몇 가지에 대해서 알아 보겠습니다.
 
 아래는 Nightwatchjs 기반에서 Thing+ 서비스에서 실제 사용하고 있는 테스트 구조입니다.
 
